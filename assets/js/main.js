@@ -157,59 +157,59 @@
 			</div>
 
 			<!-- COLOR SETTINGS -->
-			<div class="bd-theme-settings">
-				<div class="bd-theme-settings-wrapper">
-					<div class="bd-theme-settings-open">
-					<button class="bd-theme-settings-open-btn">
-						<span class="bd-theme-settings-gear">
-							<i class="fal fa-cog"></i>
-						</span>
-						<span class="bd-theme-settings-close">
-							<i class="fal fa-times"></i>
-						</span>
-					</button>
-					</div>
-					<div class="row row-cols-4 gy-2 gx-2">
-					<div class="col">
-						<div class="bd-theme-color-item bd-color-active">
-						<button class="bd-theme-color-btn bd-color-settings-btn d-none" data-color-default="#ffaf00" type="button" data-color="#ffaf00"></button>
-							<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#ffaf00"></button>
-						</div>
-					</div>
-					<div class="col">
-						<div class="bd-theme-color-item bd-color-active">
-							<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#92942e"></button>
-						</div>
-					</div>
-					<div class="col">
-						<div class="bd-theme-color-item bd-color-active">
-							<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#8098ff"></button>
-						</div>
-					</div>
-					<div class="col">
-						<div class="bd-theme-color-item bd-color-active">
-							<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#f46100"></button>
-						</div>
-					</div>
-					</div>
-				</div>
-				<div class="bd-theme-color-input">
-					<h6>Choose Custom Color</h6>
-					<input type="color" id="bd-color-setings-input" value="#0b3d2c">
-					<label id="bd-theme-color-label" for="bd-color-setings-input"></label>
-				</div>
-			</div>
+
 		</div>
 		</div>`;
-
+			// <div class="bd-theme-settings">
+			// 	<div class="bd-theme-settings-wrapper">
+			// 		<div class="bd-theme-settings-open">
+			// 		<button class="bd-theme-settings-open-btn">
+			// 			<span class="bd-theme-settings-gear">
+			// 				<i class="fal fa-cog"></i>
+			// 			</span>
+			// 			<span class="bd-theme-settings-close">
+			// 				<i class="fal fa-times"></i>
+			// 			</span>
+			// 		</button>
+			// 		</div>
+			// 		<div class="row row-cols-4 gy-2 gx-2">
+			// 		<div class="col">
+			// 			<div class="bd-theme-color-item bd-color-active">
+			// 			<button class="bd-theme-color-btn bd-color-settings-btn d-none" data-color-default="#ffaf00" type="button" data-color="#ffaf00"></button>
+			// 				<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#ffaf00"></button>
+			// 			</div>
+			// 		</div>
+			// 		<div class="col">
+			// 			<div class="bd-theme-color-item bd-color-active">
+			// 				<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#92942e"></button>
+			// 			</div>
+			// 		</div>
+			// 		<div class="col">
+			// 			<div class="bd-theme-color-item bd-color-active">
+			// 				<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#8098ff"></button>
+			// 			</div>
+			// 		</div>
+			// 		<div class="col">
+			// 			<div class="bd-theme-color-item bd-color-active">
+			// 				<button class="bd-theme-color-btn bd-color-settings-btn" type="button" data-color="#f46100"></button>
+			// 			</div>
+			// 		</div>
+			// 		</div>
+			// 	</div>
+			// 	<div class="bd-theme-color-input">
+			// 		<h6>Choose Custom Color</h6>
+			// 		<input type="color" id="bd-color-setings-input" value="#0b3d2c">
+			// 		<label id="bd-theme-color-label" for="bd-color-setings-input"></label>
+			// 	</div>
+			// </div>
 	settings.append(settings_html);
 	}
 	tp_settings_append(false); // if want to enable dark light mode then send "true";
 
 	// 08. settings open btn
-	$(".bd-theme-settings-open-btn").on("click", function () {
-	$(".bd-theme-settings-area").toggleClass("settings-opened");
-	});
+	// $(".bd-theme-settings-open-btn").on("click", function () {
+	// $(".bd-theme-settings-area").toggleClass("settings-opened");
+	// });
 
 	// 09. Mouse Custom Cursor
 	function itCursor() {
