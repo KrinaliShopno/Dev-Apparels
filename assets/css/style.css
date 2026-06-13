@@ -3868,7 +3868,7 @@ div.mean-container a.meanmenu-reveal {
   animation: rotate 8s linear infinite alternate;
 }
 .about-area {
-  padding: 80px 0px ;
+  padding: 80px 0px 0px;
 }
 @media screen and (min-width: 1200px) {
   .about-tab-wrapper {
@@ -11055,6 +11055,9 @@ body {
 .features-area{
   padding: 60px 0px;
 }
+.section-title {
+  font-size: 45px;
+}
 @media (max-width:768px) {
     .contact-form-area-shape-2 {
     position: absolute;
@@ -11106,3 +11109,250 @@ body {
    grid-template-columns: 1fr;
 }
   }
+
+
+  .vm-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0f4270;
+    margin-bottom: 12px;
+}
+.vm-eyebrow::before,
+.vm-eyebrow::after {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background: #0f4270;
+    opacity: 0.4;
+}
+.vm-main-title {
+    font-size: 45px;
+    font-weight: 600;
+    color: #162033;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.vm-main-sub {
+    font-size: 15px;
+    color: #6b7a90;
+    margin-bottom: 52px;
+}
+
+/* ─── Side-by-side layout ────────────────────────────── */
+.vm-layout {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: stretch;
+}
+
+/* ─── Boxes ──────────────────────────────────────────── */
+.vm-box {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 44px 46px;
+}
+.vm-box-light {
+    background: #ffffff;
+    border: 1px solid #dde3ec;
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+}
+.vm-box-dark {
+    background: #0f4270;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Large ghost number */
+.vm-bg-num {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+    color: #0f4270;
+    opacity: 0.05;
+    user-select: none;
+    pointer-events: none;
+}
+.vm-box-dark .vm-bg-num {
+    color: #fff;
+}
+
+/* Icon circle */
+.vm-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eef2f8;
+    border: 1.5px solid #c8d6e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+.vm-icon-dark {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.2);
+}
+.vm-icon-wrap i {
+    font-size: 24px;
+    color: #0f4270;
+}
+.vm-icon-dark i {
+    color: #fff;
+}
+
+/* Tag */
+.vm-tag {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    color: #0f4270;
+    margin-bottom: 10px;
+}
+.vm-tag-dark {
+    color: rgba(255,255,255,0.5);
+}
+
+/* Title */
+.vm-box-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #162033;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+.vm-box-title-dark {
+    color: #ffffff;
+}
+
+/* Description */
+.vm-box-desc {
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: #5a6a7e;
+    margin-bottom: 26px;
+}
+.vm-box-desc-dark {
+    color: rgba(255,255,255,0.68);
+}
+
+/* Divider */
+.vm-box-line {
+    height: 1px;
+    background: #e2e8f0;
+    margin-bottom: 22px;
+}
+.vm-box-line-dark {
+    background: rgba(255,255,255,0.14);
+}
+
+/* Checklist */
+.vm-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.vm-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #3a4a5c;
+}
+.vm-checklist-dark li {
+    color: rgba(255,255,255,0.82);
+}
+.vm-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #eef2f8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.vm-check i {
+    font-size: 9px;
+    color: #0f4270;
+}
+.vm-check-dark {
+    background: rgba(255,255,255,0.12);
+}
+.vm-check-dark i {
+    color: #fff;
+}
+
+/* ─── Center column ──────────────────────────────────── */
+.vm-center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.vm-center-line-top,
+.vm-center-line-bot {
+    flex: 1;
+    width: 1px;
+    background: #c8d6e8;
+    opacity: 0.6;
+}
+.vm-center-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #162033;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+
+
+/* ─── Responsive ─────────────────────────────────────── */
+@media (max-width: 1199px) {
+    .vm-box { padding: 40px 32px 38px; }
+   
+}
+@media (max-width: 991px) {
+    .vm-section { padding: 70px 0 60px; }
+    .vm-main-title { font-size: 30px; }
+    .vm-layout { grid-template-columns: 1fr; }
+    .vm-box-light { border-radius: 8px 8px 0 0; border: 1px solid #dde3ec; }
+    .vm-box-dark { border-radius: 0 0 8px 8px; }
+    .vm-center-col { flex-direction: row; height: 52px; }
+    .vm-center-line-top, .vm-center-line-bot { flex: 1; width: auto; height: 1px; }
+}
+@media (max-width: 767px) {
+   
+    .vm-strip-sep { display: none; }
+    .vm-strip-item { width: calc(50% - 10px); flex-direction: row; text-align: left; gap: 10px; }
+    .vm-box { padding: 32px 24px; }
+}
+@media (max-width: 480px) {
+    .vm-main-title { font-size: 26px; }
+    .vm-box-title { font-size: 22px; }
+    .vm-strip-item { width: 100%; }
+}
