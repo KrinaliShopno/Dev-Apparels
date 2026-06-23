@@ -11066,6 +11066,10 @@ body {
     right: 0px;
     width: 50px;
     animation: translateY 10s linear infinite alternate;
+    
+}
+.section-title {
+  font-size: 35px;
 }
 .slick-next {
     right: 15px;
@@ -11082,7 +11086,7 @@ body {
 }
   @media (max-width:425px) {
       .about-area {
-    padding: 130px 0px 0px;
+    padding: 10px 0px 0px;
 }
       .cards-grid {
     display: grid;
